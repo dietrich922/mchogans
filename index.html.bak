@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html dir="ltr" data-tcc-ignore="" lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>McHogans LLC</title>
     <script type="text/javascript">
       function displayNextImage() {
@@ -22,11 +22,12 @@
       images[0] = "./FrontDoor.jpg?random=323527528432525.24234";
       images[1] = "./handshake.jpg";
     </script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body onload="startTimer()">
-    <pre id="css" class="code-box" aria-labeledby="css-editor-title">              
-          <code>
-<style>
+  <body style="            margin: 0;padding: 0" onload="startTimer()"> <a name="top"></a>
+    <style>      
+* {margin: 0; padding: 0;}
 .rotate {
   animation: rotation 20s;
 }
@@ -39,39 +40,6 @@
   animation-iteration-count: infinite;
 }
 
-* {
-  font-family:'Lato';
-}
-
-.scene {
-  width:10em;
-  height:10em;
-  margin:2em 10em;
-  perspective:10em;
-}
-
-.cube {
-  width:100%;
-  height:100%;
-  position:relative;
-  animation: spinning 2s infinite;
-  transform-style:preserve-3d;
-}
-
- /* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 30%;
-  padding:5px;
-}
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-} 
-
 @keyframes spinning {
   from  { transform: translateZ(-5em) rotateY(0deg);   }
   to    { transform: translateZ(-5em) rotateY(360deg); }
@@ -79,94 +47,92 @@
 
 @keyframes rotation {
   from {
-    transform: rotateY(0deg) translateZ(0em);
+    transform : rotateY(0deg) translateZ(0em);
   }
   to {
     transform: rotateY(359deg) translateZ(0em);
+  }  
   }
+      
+#container {height: 100%; width:100%; font-size: 0;}
+#left, #middle, #right {display: inline-block; *display: inline; zoom: 1; vertical-align: top; font-size: 12px; height:700px; float:left;}
+ #left {width: 10%;  background-color: black;}
+#middle {width: 80%; background-color: black;}
+#right {width: 10%;  background-color: black;}
+
+      .float {
+    width:33.33%;
+    height:400px;
+    float:left;
 }
-</style>
-              </code>
-            </pre>
-    <div class="wsb-canvas body">
-      <div class="wsb-canvas-page-container" style="min-height: 100%; padding-top: 50px; position: relative;">
-        <div class="wsb-canvas-page page" style="height: 62px; margin: auto; width: 1125px; background-color: transparent; position: relative; ">
-          <div class="wsb-element-image" data-type="element">
-            <div id="wsb-element-c9ad341a-4f26-4e20-bcda-25956162437f" class="wsb-element-text"
+  
+</style> <div class="wsb-canvas-page page" style="margin: 0; position: relative; ">
+      <div style="text-align: center;"> <img src="./thumbnail_mchogansm.jpg?random=323527528432525.24234"
 
-              data-type="element">
-              <div class="txt "> </div>
-              <div id="wsb-element-c7f8b71d-8699-486c-832b-aa33caa86c9b" class="wsb-element-gallery"
+          class="rotate linear infinite" alt=" " style="vertical-align: middle; width: 107px; height: 107px;"
 
-                data-type="element" style="top: 686px; height: 120px; width:1060px">
-                <h1 style="text-align: center;"> <img src="./thumbnail_mchogansm.jpg?random=323527528432525.24234"
+          title="McHogans LLC"><img src="./McHogansEnterpriseGroup.jpg?random=323527528432525.24234"
 
-                    class="rotate linear infinite" alt=" " style="vertical-align: middle; width: 107px; height: 107px;"
+          alt=" " title=" " style="vertical-align: middle; width: 299px; height: 113px;">
+      </div>
+      <div id="left">
+        <div class="row" style="min-height: 18px"></div>
+        <div class="row">
+          <h1 style="text-align: left;"> <a href="./RealtyAndPropertyManagement.html"><img
 
-                    title="McHogans LLC"><img src="./McHogansEnterpriseGroup.jpg?random=323527528432525.24234"
+                src="./thumbnail_mchogansR&amp;P.jpg?random=323527528432525.24234"
 
-                    alt=" " title=" " style="vertical-align: middle; width: 299px; height: 113px;">
-                </h1>
-                <br>
-                <br>
-              </div>
-            </div>
-            <div class="txt " style="width:1060px;">&gt;
-              <h1 style="text-align: center; color: #bccb76;">Website under
-                construction<br>
-                Coming Soon!</h1>
-            </div>
-          </div>
-          <div class="column">
-            <div class="row">
-              <h1> <a href="./RealtyAndPropertyManagement.html"><img
+                style="width: 262px; height: 114px;"></a></h1>
+        </div>
+        <div class="row" style="min-height: 155px"></div>
+        <div class="row">
+          <h1 style="text-align: left;"><a href="designanddevelopment.html"><img
 
-                    src="./thumbnail_mchogansR&amp;P.jpg?random=323527528432525.24234"
+                src="./thumbnail_mchogansD&amp;D.jpg?random=323527528432525.24234"
 
-                    style="width: 262px; height: 114px;"></a></h1>
-            </div>
-            <div class="row">
-              <h1><a href="designanddevelopment.html"><img src="./thumbnail_mchogansD&amp;D.jpg?random=323527528432525.24234"
+                style="width: 262px; height: 114px;"></a></h1>
+        </div>
+        <div class="row" style="min-height: 155px"></div>
+        <div class="row">
+          <h1 style="text-align: left;"><a href="./constructionandcleaning.html"><img
 
-                    style="width: 262px; height: 114px;"></a></h1>
-            </div>
-            <div class="row">
-              <div class="column">
-                <h1 style="text-align: center;"> <a href="logistics.html"><img
+                src="./thumbnail_mchogans5.jpg?random=323527528432525.24234" alt=" "
 
-                      src="./thumbnail_mchogansLOGISTICS1.jpg?random=323527528432525.24234"
-
-                      alt=" " title=" " style="width: 268px; height:114px;"></a></h1>
-                <h1 style="text-align: center;"></h1>
-              </div>
-            </div>
-          </div>
-          <div class="column"><img id="img" src="./FrontDoor.jpg" style="width: 367px; height: 395px;">
-          </div>
-          <div class="column">
-            <div class="row">
-              <h1 style="text-align: right;"><a href="./constructionandcleaning.html"><img
-
-                    src="./thumbnail_mchogans5.jpg?random=323527528432525.24234"
-
-                    alt=" " title=" " style="width: 272px; height: 114px;"></a></h1>
-            </div>
-            <div class="row">
-              <h1 style="text-align: right;"> <a href="./salesandmarketing.html"><img
-
-                    src="./thumbnail_mchogansS&amp;M.jpg?random=323527528432525.24234"
-
-                    alt=" " title=" " style="width: 268px; height: 114px;"></a></h1>
-            </div>
-            <div class="row">
-              <h1 style="text-align: right;"><a href="./autodepot.html"><img src="./thumbnail_mauto1.jpg?random=323527528432525.24234"
-
-                    alt=" " title=" " style="width: 272px; height: 114px;"></a></h1>
-            </div>
-          </div>
+                title=" " style="width: 262px; height: 114px;"></a></h1>
         </div>
       </div>
-      <script type="text/javascript"> require(['jquery', 'common/cookiemanager/cookiemanager', 'designer/iebackground/iebackground'], function ($, cookieManager, bg) { if (cookieManager.getCookie("WSB.ForceDesktop")) { $('.view-as-mobile', '.wsb-canvas-page-container').show().find('a').bind('click', function () { cookieManager.eraseCookie("WSB.ForceDesktop"); window.location.reload(true); }); } bg.fixBackground(); }); </script>
+      <div id="middle"> </div>
+      <div id="right">
+        <div class="row" style="min-height: 18px"></div>
+        <div class="row">
+          <h1 style="text-align: center;"> <a href="./salesandmarketing.html"><img
+
+                src="./thumbnail_mchogansS&amp;M.jpg?random=323527528432525.24234"
+
+                alt=" " title=" " style="width: 268px; height: 114px;"></a></h1>
+        </div>
+        <div class="row" style="min-height: 155px"></div>
+        <div class="row">
+          <h1 style="text-align: center;"> <a href="logistics.html"><img src="./thumbnail_mchogansLOGISTICS1.jpg?random=323527528432525.24234"
+
+                alt=" " title=" " style="width: 268px; height:114px;"></a></h1>
+        </div>
+        <div class="row" style="min-height: 155px"></div>
+        <div class="row">
+          <h1 style="text-align: center;"><a href="./autodepot.html"><img src="./thumbnail_mauto1.jpg?random=323527528432525.24234"
+
+                alt=" " title=" " style="width: 272px; height: 114px;"></a></h1>
+        </div>
+      </div>
+      <div style="text-align: center; min-height: 1080px; font-size: 27px; color: #bccb76; background-color:white; width:100%;">
+      </div>
+      <div style="text-align: center;  min-height: 1080px; color: #bccb76; background-color:black; width:100%;margin: 0px;padding:0px;"></div>
+      <div style="text-align: center; min-height: 30px; font-size: 48px; color: black; background-color:white; width:100%;"><b>
+        Copyright &copy; McHogans LLC. All Rights Reserved.</b></div>
     </div>
+    <script type="text/javascript"> require(['jquery', 'common/cookiemanager/cookiemanager', 'designer/iebackground/iebackground'], function ($, cookieManager, bg) { if (cookieManager.getCookie("WSB.ForceDesktop")) { $('.view-as-mobile', '.wsb-canvas-page-container').show().find('a').bind('click', function () { cookieManager.eraseCookie("WSB.ForceDesktop"); window.location.reload(true); }); } bg.fixBackground(); }); </script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
   </body>
 </html>
