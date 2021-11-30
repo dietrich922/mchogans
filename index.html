@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html dir="ltr" data-tcc-ignore="" lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>McHogans LLC</title>
     <script type="text/javascript">
@@ -24,8 +25,6 @@
     </script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body style="            margin: 0;padding: 0" onload="startTimer()"> <a name="top"></a>
     <style>      
 * {margin: 0; padding: 0;}
 .rotate {
@@ -55,18 +54,86 @@
   }
       
 #container {height: 100%; width:100%; font-size: 0;}
-#left, #middle, #right {display: inline-block; *display: inline; zoom: 1; vertical-align: top; font-size: 12px; height:700px; float:left;}
- #left {width: 10%;  background-color: black;}
-#middle {width: 80%; background-color: black;}
-#right {width: 10%;  background-color: black;}
+#left, #middle, #right {display: inline-block; *display: inline; zoom: 1; vertical-align: top; font-size: 12px; height:260px; float:left;}
+ #left {width: 49%;  background-color: black;}
+#middle {width: 2%; background-color: black;}
+#right {width: 49%;  background-color: black;}
+	
+      h1 {
+        text-align: center;
+      }
+      
+      body {
+  			overflow-x: hidden; /* Hide horizontal scrollbar */
+			}
+	
+      .divspacing {
+        min-height: 78x;
+      }
+      
+      .icon {
+       	text-align: center; width: 150px; height: 70px;
+      }
+      
+      #main {
+        margin: 0px; padding: 0px; width: 100%;
+      }
 
-      .float {
-    width:33.33%;
-    height:400px;
-    float:left;
+      #copyright {
+        text-align: center; min-height: 30px; font-size: 16px; color: black; background-color:white;
+      }
+      
+    /********** Large devices only **********/    
+    @media (min-width: 1200px) {
+#left, #middle, #right {display: inline-block; *display: inline; zoom: 1; vertical-align: top; font-size: 12px; height:700px; float:left;}
+      #left {width: 30%;  background-color: black;}
+      #middle {width: 40%; background-color: black;}
+      #right {width: 30%;  background-color: black;}
+      
+      .icon {
+        text-align: center; width: 262px; height: 114px;
+      }
+      
+      #main {
+        margin: 0px; padding: 0px; width: 100%;
+      }
+
+      #copyright {
+        text-align: center; min-height: 30px; font-size: 48px; color: black; background-color:white;
+      }
+      .divspacing {
+        min-height: 155px
+      }
+    }
+
+
+    /********** Medium devices only **********/
+    @media (min-width: 992px) and (max-width: 1199px) {
+#left, #middle, #right {display: inline-block; *display: inline; zoom: 1; vertical-align: top; font-size: 12px; height:700px; float:left;}
+      #left {width: 30%;  background-color: black;}
+      #middle {width: 40%; background-color: black;}
+      #right {width: 30%;  background-color: black;}
+      
+      .icon {
+        text-align: center; width: 262px; height: 114px;
+      }
+      
+      #main {
+        margin: 0px; padding: 0px; width: 100%;
+      }
+
+      #copyright {
+        text-align: center; min-height: 30px; font-size: 48px; color: black; background-color:white;
+      }
+
+      .divspacing {
+        min-height: 155px
+      }
 }
   
-</style> <div class="wsb-canvas-page page" style="margin: 0; position: relative; ">
+</style></head>
+  <body id="main" onload="startTimer()"> <a name="top"></a>
+    <div class="wsb-canvas-page page" style="margin: 0; position: relative; ">
       <div style="text-align: center;"> <img src="./thumbnail_mchogansm.jpg?random=323527528432525.24234"
 
           class="rotate linear infinite" alt=" " style="vertical-align: middle; width: 107px; height: 107px;"
@@ -78,57 +145,49 @@
       <div id="left">
         <div class="row" style="min-height: 18px"></div>
         <div class="row">
-          <h1 style="text-align: center;"> <a href="./RealtyAndPropertyManagement.html"><img
+          <h1> <a href="./RealtyAndPropertyManagement.html"><img src="./thumbnail_mchogansR&amp;P.jpg?random=323527528432525.24234"
 
-                src="./thumbnail_mchogansR&amp;P.jpg?random=323527528432525.24234"
-
-                style="width: 262px; height: 114px;"></a></h1>
+                class="icon"></a></h1>
         </div>
-        <div class="row" style="min-height: 155px"></div>
+        <div class="divspacing"></div>
         <div class="row">
-          <h1 style="text-align: center;"><a href="designanddevelopment.html"><img
+          <h1><a href="designanddevelopment.html"><img src="./thumbnail_mchogansD&amp;D.jpg?random=323527528432525.24234"
 
-                src="./thumbnail_mchogansD&amp;D.jpg?random=323527528432525.24234"
-
-                style="width: 262px; height: 114px;"></a></h1>
+                class="icon"></a></h1>
         </div>
-        <div class="row" style="min-height: 155px"></div>
+        <div class="divspacing"></div>
         <div class="row">
-          <h1 style="text-align: center;"><a href="./constructionandcleaning.html"><img
+          <h1><a href="./constructionandcleaning.html"><img src="./thumbnail_mchogans5.jpg?random=323527528432525.24234"
 
-                src="./thumbnail_mchogans5.jpg?random=323527528432525.24234" alt=" "
-
-                title=" " style="width: 262px; height: 114px;"></a></h1>
+                class="icon"></a></h1>
         </div>
       </div>
       <div id="middle"> </div>
       <div id="right">
         <div class="row" style="min-height: 18px"></div>
         <div class="row">
-          <h1 style="text-align: center;"> <a href="./salesandmarketing.html"><img
+          <h1> <a href="./salesandmarketing.html"><img src="./thumbnail_mchogansS&amp;M.jpg?random=323527528432525.24234"
 
-                src="./thumbnail_mchogansS&amp;M.jpg?random=323527528432525.24234"
-
-                alt=" " title=" " style="width: 268px; height: 114px;"></a></h1>
+                class="icon"></a></h1>
         </div>
-        <div class="row" style="min-height: 155px"></div>
+        <div class="divspacing"></div>
         <div class="row">
-          <h1 style="text-align: center;"> <a href="logistics.html"><img src="./thumbnail_mchogansLOGISTICS1.jpg?random=323527528432525.24234"
+          <h1> <a href="logistics.html"><img src="./thumbnail_mchogansLOGISTICS1.jpg?random=323527528432525.24234"
 
-                alt=" " title=" " style="width: 268px; height:114px;"></a></h1>
+                class="icon"></a></h1>
         </div>
-        <div class="row" style="min-height: 155px"></div>
+        <div class="divspacing"></div>
         <div class="row">
-          <h1 style="text-align: center;"><a href="./autodepot.html"><img src="./thumbnail_mauto1.jpg?random=323527528432525.24234"
+          <h1><a href="./autodepot.html"><img src="./thumbnail_mauto1.jpg?random=323527528432525.24234"
 
-                alt=" " title=" " style="width: 272px; height: 114px;"></a></h1>
+                class="icon"></a></h1>
         </div>
       </div>
-      <div style="text-align: center; min-height: 1080px; font-size: 27px; color: #bccb76; background-color:white; width:100%;">
+      <div style="text-align: center; min-height: 1080px; font-size: 27px; color: #bccb76; background-color:white;">
       </div>
       <div style="text-align: center;  min-height: 1080px; color: #bccb76; background-color:black; width:100%;margin: 0px;padding:0px;"></div>
-      <div style="text-align: center; min-height: 30px; font-size: 48px; color: black; background-color:white; width:100%;"><b>
-        Copyright &copy; McHogans LLC. All Rights Reserved.</b></div>
+      <div id="copyright"><b>
+          Copyright &copy; McHogans LLC. All Rights Reserved.</b></div>
     </div>
     <script type="text/javascript"> require(['jquery', 'common/cookiemanager/cookiemanager', 'designer/iebackground/iebackground'], function ($, cookieManager, bg) { if (cookieManager.getCookie("WSB.ForceDesktop")) { $('.view-as-mobile', '.wsb-canvas-page-container').show().find('a').bind('click', function () { cookieManager.eraseCookie("WSB.ForceDesktop"); window.location.reload(true); }); } bg.fixBackground(); }); </script>
     <script src="js/jquery-3.6.0.min.js"></script>
