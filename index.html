@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>McHogans LLC</title>
-    <script type="text/javascript">
+    <script>
       function displayNextImage() {
         x = (x === images.length - 1) ? 0 : x + 1;
         document.getElementById("img").src = images[x];
@@ -59,8 +59,12 @@
 #middle {width: 2%; background-color: black;}
 #right {width: 49%;  background-color: black;}
 	
-      h1 {
-        text-align: center;
+      .alignleft {
+        text-align: left; padding:10px; padding-left:20px;
+      }
+      
+      .alignright {
+        text-align: right; padding:10px; padding-right:20px;
       }
       
       body {
@@ -68,7 +72,7 @@
 			}
 	
       .divspacing {
-        min-height: 78x;
+        min-height: 1px;
       }
       
       .icon {
@@ -99,10 +103,10 @@
       }
 
       #copyright {
-        text-align: center; min-height: 30px; font-size: 48px; color: black; background-color:white;
+        text-align: center; min-height: 30px; font-size: 20px; color: black; background-color:white;
       }
       .divspacing {
-        min-height: 155px
+        min-height: 25px
       }
     }
 
@@ -115,7 +119,7 @@
       #right {width: 30%;  background-color: black;}
       
       .icon {
-        text-align: center; width: 262px; height: 114px;
+        text-align: center; width: 250px; height: 100px;
       }
       
       #main {
@@ -123,16 +127,16 @@
       }
 
       #copyright {
-        text-align: center; min-height: 30px; font-size: 48px; color: black; background-color:white;
+        text-align: center; min-height: 30px; font-size: 20px; color: black; background-color:white;
       }
 
       .divspacing {
-        min-height: 155px
+        min-height: 25px
       }
 }
   
 </style></head>
-  <body id="main" onload="startTimer()"> <a name="top"></a>
+  <body id="main" onload="startTimer()"> 
     <div class="wsb-canvas-page page" style="margin: 0; position: relative; ">
       <div style="text-align: center;"> <img src="./thumbnail_mchogansm.jpg?random=323527528432525.24234"
 
@@ -143,55 +147,49 @@
           alt=" " title=" " style="vertical-align: middle; width: 299px; height: 113px;">
       </div>
       <div id="left">
-        <div class="row" style="min-height: 18px"></div>
-        <div class="row">
-          <h1> <a href="./RealtyAndPropertyManagement.html"><img src="./thumbnail_mchogansR&amp;P.jpg?random=323527528432525.24234"
+        <div class="row" style="min-height: 230px"></div>
+        <div class="row"> <a class="alignleft" href="./RealtyAndPropertyManagement.html"><img
 
-                class="icon"></a></h1>
-        </div>
+              src="./thumbnail_mchogansR&amp;P.jpg?random=323527528432525.24234"
+
+              alt="" class="icon"></a> </div>
         <div class="divspacing"></div>
-        <div class="row">
-          <h1><a href="designanddevelopment.html"><img src="./thumbnail_mchogansD&amp;D.jpg?random=323527528432525.24234"
+        <div class="row"> <a class="alignleft" href="designanddevelopment.html"><img
 
-                class="icon"></a></h1>
-        </div>
+              src="./thumbnail_mchogansD&amp;D.jpg?random=323527528432525.24234"
+
+              alt="" class="icon"></a> </div>
         <div class="divspacing"></div>
-        <div class="row">
-          <h1><a href="./constructionandcleaning.html"><img src="./thumbnail_mchogans5.jpg?random=323527528432525.24234"
+        <div class="row"> <a class="alignleft" href="./constructionandcleaning.html"><img
 
-                class="icon"></a></h1>
-        </div>
+              src="./thumbnail_mchogans5.jpg?random=323527528432525.24234" alt=""
+
+              class="icon"></a> </div>
       </div>
       <div id="middle"> </div>
       <div id="right">
-        <div class="row" style="min-height: 18px"></div>
-        <div class="row">
-          <h1> <a href="./salesandmarketing.html"><img src="./thumbnail_mchogansS&amp;M.jpg?random=323527528432525.24234"
+        <div class="row" style="min-height: 230px"></div>
+        <div class="row"> <a class="alignright" href="./salesandmarketing.html"><img
 
-                class="icon"></a></h1>
-        </div>
+              src="./thumbnail_mchogansS&amp;M.jpg?random=323527528432525.24234"
+
+              alt="" class="icon"></a> </div>
         <div class="divspacing"></div>
-        <div class="row">
-          <h1> <a href="logistics.html"><img src="./thumbnail_mchogansLOGISTICS1.jpg?random=323527528432525.24234"
+        <div class="row"> <a class="alignright" href="logistics.html"><img src="./thumbnail_mchogansLOGISTICS1.jpg?random=323527528432525.24234"
 
-                class="icon"></a></h1>
-        </div>
+              alt="" class="icon"></a> </div>
         <div class="divspacing"></div>
-        <div class="row">
-          <h1><a href="./autodepot.html"><img src="./thumbnail_mauto1.jpg?random=323527528432525.24234"
+        <div class="row"> <a class="alignright" href="./autodepot.html"><img src="./thumbnail_mauto1.jpg?random=323527528432525.24234"
 
-                class="icon"></a></h1>
-        </div>
+              alt="" class="icon"></a> </div>
       </div>
       <div style="text-align: center; min-height: 1080px; font-size: 27px; color: #bccb76; background-color:white;">
       </div>
       <div style="text-align: center;  min-height: 1080px; color: #bccb76; background-color:black; width:100%;margin: 0px;padding:0px;"></div>
-      <div id="copyright"><b>
-          Copyright &copy; McHogans LLC. All Rights Reserved.</b></div>
+      <div id="copyright"><b> &copy; McHogans 2021. All Rights Reserved.</b></div>
     </div>
-    <script type="text/javascript"> require(['jquery', 'common/cookiemanager/cookiemanager', 'designer/iebackground/iebackground'], function ($, cookieManager, bg) { if (cookieManager.getCookie("WSB.ForceDesktop")) { $('.view-as-mobile', '.wsb-canvas-page-container').show().find('a').bind('click', function () { cookieManager.eraseCookie("WSB.ForceDesktop"); window.location.reload(true); }); } bg.fixBackground(); }); </script>
+    <script> require(['jquery', 'common/cookiemanager/cookiemanager', 'designer/iebackground/iebackground'], function ($, cookieManager, bg) { if (cookieManager.getCookie("WSB.ForceDesktop")) { $('.view-as-mobile', '.wsb-canvas-page-container').show().find('a').bind('click', function () { cookieManager.eraseCookie("WSB.ForceDesktop"); window.location.reload(true); }); } bg.fixBackground(); }); </script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    
   </body>
 </html>
